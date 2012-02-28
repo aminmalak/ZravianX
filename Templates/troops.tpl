@@ -26,7 +26,7 @@
     <tbody>
 		<?php
             $troops = $technology->getAllUnits($village->wid,True);
-            $TroopsPresent = False;
+            $TroopsPresent = True;
             if($troops['hero'] > 0) {
                 echo "<tr><td class=\"ico\"><a href=\"build.php?id=39\"><img class=\"unit uhero\" src=\"img/x.gif\" alt=".U0." title=".U0." /></a></td>";
                 echo "<td class=\"num\">".$troops['hero']."</td><td class=\"un\">".U0."</td></tr>";
